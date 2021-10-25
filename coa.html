@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C O A | The 7 logic gate.</title>
+    <style>
+      body {
+        margin: 16px;
+        background-color: #320d3e;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid;
+        border-collapse: collapse;
+        padding: 12px;
+      }
+      .tablemain {
+        display: flex;
+        justify-content: center;
+      }
+      .tablemain:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <center><h1>Types of Logic gates</h1></center>
+    <h2>Basic Gates</h2>
+    <h3>1. AND</h3>
+    <p>
+      If all inputs are high (1) then only you will get high (1) output, rest
+      other situations you will get low (0) output.
+    </p>
+
+    <div class="tablemain">
+      <img src="image/andgate.jpg" alt="" />
+      <table>
+        <tr>
+          <th>X</th>
+          <th>Y</th>
+          <th>F</th>
+        </tr>
+        <tr>
+          <td>o</td>
+          <td>o</td>
+          <td>o</td>
+        </tr>
+        <tr>
+          <td>o</td>
+          <td>1</td>
+          <td>o</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>o</td>
+          <td>o</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </div>
+    <h3>2. OR</h3>
+    <p>
+      If any of the input is high (1) then you will get high (1) output, rest if
+      all inputs are low then you will get low (0) output.
+    </p>
+    <div class="tablemain">
+      <img src="image/orgate.png" alt="" />
+      <table>
+        <tr>
+          <th>X</th>
+          <th>Y</th>
+          <th>F</th>
+        </tr>
+        <tr>
+          <td>o</td>
+          <td>o</td>
+          <td>o</td>
+        </tr>
+        <tr>
+          <td>o</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>o</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </div>
+    <h3>3. Not</h3>
+    <p>
+      NOT gate will give the opposite outcome which it receive. if not gate
+      input is low then output is high, if its input is high its output is low.
+    </p>
+    <div class="tablemain">
+      <img src="image/notgate.png" alt="" />
+      <table>
+        <tr>
+          <th>X</th>
+          <th>X'</th>
+        </tr>
+        <tr>
+          <td>o</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+      </table>
+    </div>
+    <h2>Universal Gates</h2>
+
+    <h3>4. NAND</h3>
+    <p>
+      If all the input is high then output is low, in all other situation output
+      is high.
+    </p>
+    <div class="tablemain">
+      <img src="image/nandgate.jpg" alt="" />
+      <table>
+        <tr>
+          <th>X</th>
+          <th>Y</th>
+          <th>F</th>
+        </tr>
+        <tr>
+          <td>o</td>
+          <td>o</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>o</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>o</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+      </table>
+    </div>
+    <h3>5. NOR</h3>
+    <p>If all the input is low, then output is high.</p>
+    <div class="tablemain">
+      <img src="image/norgate.png" alt="" />
+      <table>
+        <tr>
+          <th>X</th>
+          <th>Y</th>
+          <th>F</th>
+        </tr>
+        <tr>
+          <td>o</td>
+          <td>o</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>o</td>
+          <td>1</td>
+          <td>o</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>o</td>
+          <td>o</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+      </table>
+    </div>
+    <h2>Exclusive Gates</h2>
+
+    <h3>6. X-OR</h3>
+    <p>
+      If no. of 1 are odd then it gives high output. If no. of 1 are even then
+      it gives low output.
+    </p>
+    <div class="tablemain">
+      <img src="image/xorgate.png" alt="" />
+      <table>
+        <tr>
+          <th>X</th>
+          <th>Y</th>
+          <th>F</th>
+        </tr>
+        <tr>
+          <td>o</td>
+          <td>o</td>
+          <td>o</td>
+        </tr>
+        <tr>
+          <td>o</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>o</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+      </table>
+    </div>
+    <h3>7. X-NOR</h3>
+    <p>
+      If no. of 1 are odd then it gives low output. If no of 1 are even then it
+      gives high output.
+    </p>
+    <div class="tablemain">
+      <img src="image/xnorgate.png" alt="" />
+      <table>
+        <tr>
+          <th>X</th>
+          <th>Y</th>
+          <th>F</th>
+        </tr>
+        <tr>
+          <td>o</td>
+          <td>o</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>o</td>
+          <td>1</td>
+          <td>o</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>o</td>
+          <td>o</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
